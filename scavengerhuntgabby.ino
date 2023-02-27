@@ -44,7 +44,6 @@
 #define COLOR_ORDER GRB
 
 #define VOLUME_MUSIC 25
-#define VOLUME_SPEECH 30
 
 #define LED_PIN     7
 
@@ -480,178 +479,9 @@ const unsigned int PROGMEM character_nuid_four[NUM_NUIDS] =
 
 #define TIME_STEP 150
 
-#define KNIGHT_PIN     8
-
 #define SS_PIN 10
 #define RST_PIN 9
 
-#define SPEECH_LENGTH_71 8
-const unsigned char speechData71[SPEECH_LENGTH_71] =
-  {0,1,0,1,0,1,0,0};
-
-#define SPEECH_LENGTH_72 12
-const unsigned char speechData72[SPEECH_LENGTH_72] =
-  {1,1,0,1,0,1,0,1,
-   1,0,0,0};
-
-#define SPEECH_LENGTH_73 16
-const unsigned char speechData73[SPEECH_LENGTH_73] =
-  {1,1,0,1,0,1,0,0,
-   1,1,0,1,0,1,0,0};
-
-#define SPEECH_LENGTH_74 24
-const unsigned char speechData74[SPEECH_LENGTH_74] =
-  {1,1,0,1,0,1,0,1,
-   0,1,0,1,0,1,0,0,
-   1,0,1,0,0,1,0,0};
-
-#define SPEECH_LENGTH_75 16
-const unsigned char speechData75[SPEECH_LENGTH_75] =
-  {1,0,1,0,1,0,1,0,
-   1,0,1,0,1,0,0,0};
-
-// Same as 73
-//#define SPEECH_LENGTH_76 16
-//const unsigned char speechData76[SPEECH_LENGTH_76] =
-//  {1,1,0,1,0,1,0,0,
-//   1,1,0,1,0,1,0,0};
-
-#define SPEECH_LENGTH_77 8
-const unsigned char speechData77[SPEECH_LENGTH_77] =
-  {1,0,1,1,0,0,0,0};
-
-#define SPEECH_LENGTH_78 12
-const unsigned char speechData78[SPEECH_LENGTH_78] =
-  {1,1,0,1,0,1,0,1,
-   1,0,1,0};
-
-// Same as 73
-//#define SPEECH_LENGTH_79 16
-//const unsigned char speechData79[SPEECH_LENGTH_79] =
-//  {1,1,0,1,0,1,0,0,
-//   1,1,0,1,0,1,0,0};
-
-#define SPEECH_LENGTH_80 8
-const unsigned char speechData80[SPEECH_LENGTH_80] =
-  {1,1,0,1,0,1,0,0};
-
-#define SPEECH_LENGTH_81 12
-const unsigned char speechData81[SPEECH_LENGTH_81] =
-  {1,1,0,1,0,1,0,1,
-   0,1,0,0};
-
-// Same as 73
-//#define SPEECH_LENGTH_82 16
-//const unsigned char speechData82[SPEECH_LENGTH_82] =
-//  {1,1,0,1,0,1,0,0,
-//   1,1,0,1,0,1,0,0};
-
-// Same as 73
-//#define SPEECH_LENGTH_83 16
-//const unsigned char speechData83[SPEECH_LENGTH_83] =
-//  {1,1,0,1,0,1,0,0,
-//   1,1,0,1,0,1,0,0};
-
-// Same as 73
-//#define SPEECH_LENGTH_84 16
-//const unsigned char speechData84[SPEECH_LENGTH_84] =
-//  {1,1,0,1,0,1,0,0,
-//   1,1,0,1,0,1,0,0};
-
-// Same as 73
-//#define SPEECH_LENGTH_85 16
-//const unsigned char speechData85[SPEECH_LENGTH_85] =
-//  {1,1,0,1,0,1,0,0,
-//   1,1,0,1,0,1,0,0};
-
-#define SPEECH_LENGTH_86 20
-const unsigned char speechData86[SPEECH_LENGTH_86] =
-  {1,1,0,1,0,1,0,0,
-   1,0,1,0,1,0,1,0,
-   1,0,0,0};
-
-// Same as 73
-//#define SPEECH_LENGTH_87 16
-//const unsigned char speechData87[SPEECH_LENGTH_87] =
-//  {1,1,0,1,0,1,0,0,
-//   1,1,0,1,0,1,0,0};
-
-#define SPEECH_LENGTH_88 20
-const unsigned char speechData88[SPEECH_LENGTH_88] =
-  {1,0,1,0,1,0,1,0,
-   1,0,1,0,1,0,1,0,
-   1,0,0,0};
-
-#define SPEECH_LENGTH_89 16
-const unsigned char speechData89[SPEECH_LENGTH_89] =
-  {1,0,1,0,1,0,1,0,
-   1,0,1,1,0,0,0,0};
-
-// Same as 73
-//#define SPEECH_LENGTH_90 16
-//const unsigned char speechData90[SPEECH_LENGTH_90] =
-//  {1,1,0,1,0,1,0,0,
-//   1,1,0,1,0,1,0,0};
-
-// Same as 80
-//#define SPEECH_LENGTH_91 8
-//const unsigned char speechData91[SPEECH_LENGTH_91] =
-//  {1,1,0,1,0,1,0,0};
-
-// Same as 73
-//#define SPEECH_LENGTH_92 16
-//const unsigned char speechData92[SPEECH_LENGTH_92] =
-//  {1,1,0,1,0,1,0,0,
-//   1,1,0,1,0,1,0,0};
-
-#define SPEECH_LENGTH_93 32
-const unsigned char speechData93[SPEECH_LENGTH_93] =
-  {1,1,0,1,0,1,0,0,
-   1,1,0,1,0,1,0,0,
-   1,1,0,1,0,1,0,0,
-   1,1,0,0,0,0,0,0};
-
-// Same as 73
-//#define SPEECH_LENGTH_94 16
-//const unsigned char speechData94[SPEECH_LENGTH_94] =
-//  {1,1,0,1,0,1,0,0,
-//   1,1,0,1,0,1,0,0};
-
-#define SPEECH_LENGTH_95 20
-const unsigned char speechData95[SPEECH_LENGTH_95] =
-  {1,1,0,1,0,1,0,0,
-   1,1,0,1,0,1,0,0,
-   1,0,0,0};
-
-// Same as 80
-//#define SPEECH_LENGTH_96 8
-//const unsigned char speechData96[SPEECH_LENGTH_96] =
-//  {1,1,0,1,0,1,0,0};
-
-// Same as 73
-//#define SPEECH_LENGTH_97 16
-//const unsigned char speechData97[SPEECH_LENGTH_97] =
-//  {1,1,0,1,0,1,0,0,
-//   1,1,0,1,0,1,0,0};
-
-// Same as 80
-//#define SPEECH_LENGTH_98 8
-//const unsigned char speechData98[SPEECH_LENGTH_98] =
-//  {1,1,0,1,0,1,0,0};
-
-#define SPEECH_LENGTH_99 8
-const unsigned char speechData99[SPEECH_LENGTH_99] =
-  {1,0,1,0,1,0,1,0};
-
-// Same as 73
-//#define SPEECH_LENGTH_100 16
-//const unsigned char speechData100[SPEECH_LENGTH_100] =
-//  {1,1,0,1,0,1,0,0,
-//   1,1,0,1,0,1,0,0};
-
-#define SPEECH_LENGTH_101 8
-const unsigned char speechData101[SPEECH_LENGTH_101] =
-  {1,1,0,1,1,0,0,0};
 
 SoftwareSerial mySoftwareSerial(5, 6); // RX, TX
 DFRobotDFPlayerMini myDFPlayer;
@@ -663,6 +493,8 @@ String ID = "";
 unsigned int track_num_req = 0;
 unsigned int track_num_current = 0;
 
+// data to send over USB
+char dataString[5] = {0};
 
 MFRC522 rfid(SS_PIN, RST_PIN); // Create MFRC522 instance
 
@@ -709,8 +541,6 @@ void display_leds_three(unsigned int color_num_1, unsigned int color_num_2, unsi
 void setup()
 {
 
-  pinMode(KNIGHT_PIN, OUTPUT);
-
   FastLED.addLeds<LED_TYPE, LED_PIN, COLOR_ORDER>(leds, NUM_LEDS).setCorrection( TypicalLEDStrip );
   FastLED.setBrightness(  BRIGHTNESS );
 
@@ -741,31 +571,8 @@ void setup()
   }
   Serial.println(F("DFPlayer Mini online."));
 
-  myDFPlayer.volume(VOLUME_SPEECH);  //Set volume value. From 0 to 30
+  myDFPlayer.volume(VOLUME_MUSIC);  //Set volume value. From 0 to 30
 }
-
-
-void showSpeech(uint8_t speech_length, unsigned char * speechData)
-{
-  for(int i = 0; i < speech_length; i++)
-  {
-     if (speechData[i] > 0)
-     {
-        digitalWrite(KNIGHT_PIN, HIGH);
-        Serial.println("HIGH");
-     }
-     else
-     {
-        digitalWrite(KNIGHT_PIN, LOW);
-        Serial.println("LOW");
-     }
-     delay(TIME_STEP);
-  }
-  digitalWrite(KNIGHT_PIN, LOW);
-  Serial.println("LOW");
-  
-}
-
 
 
 /**
@@ -851,175 +658,60 @@ void perform_phase_1()
 {
   myDFPlayer.playMp3Folder(10);
   delay(15000);
-  myDFPlayer.volume(VOLUME_SPEECH);  //Set volume value. From 0 to 30
-  delay(100);
-  myDFPlayer.playMp3Folder(71);
-  delay(100);
-  showSpeech(SPEECH_LENGTH_71, speechData71);
-  delay(1500);
-  myDFPlayer.playMp3Folder(72);
-  showSpeech(SPEECH_LENGTH_72, speechData72);
-  delay(1500);
-  myDFPlayer.playMp3Folder(73);
-  showSpeech(SPEECH_LENGTH_73, speechData73);
-  delay(1500);
-  myDFPlayer.playMp3Folder(74);
-  showSpeech(SPEECH_LENGTH_74, speechData74);
-  delay(1500);
-  myDFPlayer.playMp3Folder(75);
-  showSpeech(SPEECH_LENGTH_75, speechData75);
-  delay(1500);
-  myDFPlayer.playMp3Folder(76);
-  showSpeech(SPEECH_LENGTH_73, speechData73); // Same as 73
-  delay(1500);
-  myDFPlayer.playMp3Folder(77);
-  showSpeech(SPEECH_LENGTH_77, speechData77);
-  delay(1500);
-  myDFPlayer.volume(VOLUME_MUSIC);  //Set volume value. From 0 to 30  
 }
 
 void perform_phase_2()
 {
   delay(20000);
-  myDFPlayer.volume(VOLUME_SPEECH);  //Set volume value. From 0 to 30
-  delay(100);
   myDFPlayer.playMp3Folder(78);
-  showSpeech(SPEECH_LENGTH_78, speechData78);
-  delay(1500);
-  myDFPlayer.playMp3Folder(79);
-  showSpeech(SPEECH_LENGTH_73, speechData73); // Same as 73
-  delay(1500);
-  myDFPlayer.playMp3Folder(80);
-  showSpeech(SPEECH_LENGTH_80, speechData80);
-  delay(1500);
-  myDFPlayer.volume(VOLUME_MUSIC);  //Set volume value. From 0 to 30 
 }
 
 void perform_phase_3()
 {
   delay(15000);
-  myDFPlayer.volume(VOLUME_SPEECH);  //Set volume value. From 0 to 30
-  delay(100);
   myDFPlayer.playMp3Folder(81);
-  showSpeech(SPEECH_LENGTH_81, speechData81);
-  delay(1500);
-  myDFPlayer.playMp3Folder(82);
-  showSpeech(SPEECH_LENGTH_73, speechData73); // Same as 73
-  delay(1500);
-  myDFPlayer.volume(VOLUME_MUSIC);  //Set volume value. From 0 to 30 
 }
 
 void perform_phase_4()
 {
   delay(20000);
-  myDFPlayer.volume(VOLUME_SPEECH);  //Set volume value. From 0 to 30
-  delay(100);
   myDFPlayer.playMp3Folder(83);
-  showSpeech(SPEECH_LENGTH_73, speechData73); // Same as 73
-  delay(500);
-  myDFPlayer.playMp3Folder(84);
-  showSpeech(SPEECH_LENGTH_73, speechData73); // Same as 73
-  delay(500);
-  myDFPlayer.volume(VOLUME_MUSIC);  //Set volume value. From 0 to 30 
 }
 
 void perform_phase_5()
 {
   delay(17000);
-  myDFPlayer.volume(VOLUME_SPEECH);  //Set volume value. From 0 to 30
-  delay(100);
   myDFPlayer.playMp3Folder(85);
-  showSpeech(SPEECH_LENGTH_73, speechData73); // Same as 73
-  delay(1500);
-  myDFPlayer.playMp3Folder(86);
-  showSpeech(SPEECH_LENGTH_86, speechData86);
-  delay(1500);
-  myDFPlayer.volume(VOLUME_MUSIC);  //Set volume value. From 0 to 30 
 }
 
 void perform_phase_6()
 {
   delay(20000);
-  myDFPlayer.volume(VOLUME_SPEECH);  //Set volume value. From 0 to 30
-  delay(100);
   myDFPlayer.playMp3Folder(87);
-  showSpeech(SPEECH_LENGTH_73, speechData73); // Same as 73
-  delay(1500);
-  myDFPlayer.playMp3Folder(88);
-  showSpeech(SPEECH_LENGTH_88, speechData88);
-  delay(1500);
-  myDFPlayer.volume(VOLUME_MUSIC);  //Set volume value. From 0 to 30 
 }
 
 void perform_phase_7()
 {
   delay(20000);
-  myDFPlayer.volume(VOLUME_SPEECH);  //Set volume value. From 0 to 30
-  delay(100);
   myDFPlayer.playMp3Folder(89);
-  showSpeech(SPEECH_LENGTH_89, speechData89);
-  delay(1500);
-  myDFPlayer.playMp3Folder(90);
-  showSpeech(SPEECH_LENGTH_73, speechData73); // Same as 73
-  delay(1500);
-  myDFPlayer.playMp3Folder(91);
-  showSpeech(SPEECH_LENGTH_80, speechData80);  // Same as 80
-  delay(1500);
-  myDFPlayer.volume(VOLUME_MUSIC);  //Set volume value. From 0 to 30 
 }
 
 void perform_phase_8()
 {
   delay(15000);
-  myDFPlayer.volume(VOLUME_SPEECH);  //Set volume value. From 0 to 30
-  delay(100);
   myDFPlayer.playMp3Folder(92);
-  showSpeech(SPEECH_LENGTH_73, speechData73); // Same as 73
-  delay(1500);
-  myDFPlayer.playMp3Folder(93);
-  showSpeech(SPEECH_LENGTH_93, speechData93);
-  delay(1500);
-  myDFPlayer.volume(VOLUME_MUSIC);  //Set volume value. From 0 to 30 
 }
 
 void perform_phase_9()
 {
   delay(20000);
-  myDFPlayer.volume(VOLUME_SPEECH);  //Set volume value. From 0 to 30
-  delay(100);
-  myDFPlayer.playMp3Folder(94);
-  showSpeech(SPEECH_LENGTH_73, speechData73); // Same as 73
-  delay(1500);
-  myDFPlayer.playMp3Folder(95);
-  showSpeech(SPEECH_LENGTH_95, speechData95);
-  delay(1500);
-  myDFPlayer.playMp3Folder(96);
-  showSpeech(SPEECH_LENGTH_80, speechData80); // Same as 80
-  delay(1500);
-  myDFPlayer.playMp3Folder(97);
-  showSpeech(SPEECH_LENGTH_73, speechData73); // Same as 73
-  delay(1500);
-  myDFPlayer.volume(VOLUME_MUSIC);  //Set volume value. From 0 to 30 
+  myDFPlayer.playMp3Folder(94); 
 }
 
 void perform_phase_10()
 {
   delay(18000);
-  myDFPlayer.volume(VOLUME_SPEECH);  //Set volume value. From 0 to 30
-  delay(100);
   myDFPlayer.playMp3Folder(98);
-  showSpeech(SPEECH_LENGTH_80, speechData80); // Same as 80
-  delay(1500);
-  myDFPlayer.playMp3Folder(99);
-  showSpeech(SPEECH_LENGTH_99, speechData99);
-  delay(1500);
-  myDFPlayer.playMp3Folder(100);
-  showSpeech(SPEECH_LENGTH_73, speechData73); // Same as 73
-  delay(1500);
-  myDFPlayer.playMp3Folder(101);
-  showSpeech(SPEECH_LENGTH_101, speechData101);
-  delay(1500);
-  myDFPlayer.volume(VOLUME_MUSIC);  //Set volume value. From 0 to 30 
 }
 
 
@@ -1081,15 +773,6 @@ void perform_action(int matched_char)
 
 void loop()
 {
-
-
-  //display_leds_three(DISP_COLOR_WHITE, DISP_COLOR_PINK, DISP_COLOR_BLUE);
-  //myDFPlayer.volume(VOLUME_SPEECH);  //Set volume value. From 0 to 30
-  //myDFPlayer.playMp3Folder(71);
-  //delay(100);
-  //play_song();
-
-
 
   // Reset the loop if no new card present on the sensor/reader. This saves the entire process when idle.
   if ( ! rfid.PICC_IsNewCardPresent())
@@ -1174,8 +857,6 @@ void loop()
   else Serial.println(F("Card read previously."));
 
 
-  //Serial.println(myDFPlayer.readState()); //read mp3 state
-  //Serial.println(myDFPlayer.readCurrentFileNumber()); //read current play file number
 
   // Halt PICC
   rfid.PICC_HaltA();
@@ -1188,15 +869,18 @@ void loop()
   delayMicroseconds(100);
 
   
-//  Serial.println(myDFPlayer.readState()); //read mp3 state
-//  Serial.println(myDFPlayer.readVolume()); //read current volume
-//  Serial.println(myDFPlayer.readEQ()); //read EQ setting
-//  Serial.println(myDFPlayer.readFileCounts()); //read all file counts in SD card
-//  Serial.println(myDFPlayer.readCurrentFileNumber()); //read current play file number
-//  Serial.println(myDFPlayer.readFileCountsInFolder(3)); //read fill counts in folder SD:/03
   delay(1);
   
 
+   sprintf(dataString,"%02X",1); // convert a value to hexa 
+   Serial.println(dataString);   // send the data
+   delay(1000);                  // give the loop some break
+   sprintf(dataString,"%02X",2); // convert a value to hexa 
+   Serial.println(dataString);   // send the data
+   delay(1000);                  // give the loop some break
+   sprintf(dataString,"%02X",3); // convert a value to hexa 
+   Serial.println(dataString);   // send the data
+   delay(1000);                  // give the loop some break
 
 
   
