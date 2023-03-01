@@ -567,7 +567,7 @@ void setup()
     Serial.println(F("Unable to begin:"));
     Serial.println(F("1.Please recheck the connection!"));
     Serial.println(F("2.Please insert the SD card!"));
-    while(true);
+//    while(true);
   }
   Serial.println(F("DFPlayer Mini online."));
 
@@ -774,6 +774,16 @@ void perform_action(int matched_char)
 void loop()
 {
 
+   sprintf(dataString,"DOUG%02X",1); // convert a value to hexa 
+   Serial.println(dataString);   // send the data
+   delay(10000);                  // give the loop some break
+   sprintf(dataString,"DOUG%02X",2); // convert a value to hexa 
+   Serial.println(dataString);   // send the data
+   delay(10000);                  // give the loop some break
+   sprintf(dataString,"DOUG%02X",3); // convert a value to hexa 
+   Serial.println(dataString);   // send the data
+   delay(10000);                  // give the loop some break
+
   // Reset the loop if no new card present on the sensor/reader. This saves the entire process when idle.
   if ( ! rfid.PICC_IsNewCardPresent())
     return;
@@ -870,17 +880,6 @@ void loop()
 
   
   delay(1);
-  
-
-   sprintf(dataString,"%02X",1); // convert a value to hexa 
-   Serial.println(dataString);   // send the data
-   delay(1000);                  // give the loop some break
-   sprintf(dataString,"%02X",2); // convert a value to hexa 
-   Serial.println(dataString);   // send the data
-   delay(1000);                  // give the loop some break
-   sprintf(dataString,"%02X",3); // convert a value to hexa 
-   Serial.println(dataString);   // send the data
-   delay(1000);                  // give the loop some break
 
 
   

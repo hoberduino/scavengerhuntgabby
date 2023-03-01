@@ -28,7 +28,7 @@ mov12 = ("/home/pi/videos/Gabby_12.mp4")
 mov13 = ("/home/pi/videos/Gabby_13.mp4")
 mov14 = ("/home/pi/videos/Gabby_14.mp4")
 mov15 = ("/home/pi/videos/Gabby_15.mp4")
-mov_loop = ("/home/pi/videos/kaia_bday.mp4") # 300 s
+mov_loop = ("/home/pi/videos/kaia_bday.mp4")
 
 movies = [mov1, mov2, mov3, mov4, mov5, mov6, mov7, mov8, mov9, mov10, mov11, mov12, mov13, mov14, mov15]
 movie_times = [31, 11, 93, 20, 12, 24, 51, 37, 50, 85, 50, 33, 37, 56, 10]
@@ -63,13 +63,6 @@ while True:
             if mov_num > 0 and mov_num < 16:
                 omxc.load(movies[mov_num - 1])
                 time.sleep(movie_times[mov_num - 1])
-                gabby_count = 399
-        
-        gabby_count = gabby_count + 1
-        if gabby_count > 299:
-            gabby_count = 0
-            omxc.load(mov_loop)
-            time.sleep(1.1)
 
     
     time.sleep(2.0)
