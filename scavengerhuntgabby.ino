@@ -47,7 +47,7 @@
 
 #define LED_PIN     7
 
-#define NUM_NUIDS 70
+#define NUM_NUIDS 89
 
 // All those LEDs
 CRGB leds[NUM_LEDS];
@@ -180,7 +180,26 @@ const unsigned int PROGMEM character_nuid_one[NUM_NUIDS] =
  131, // Tiana New In hex:  83 67 81 61  In dec:  131 103 129 97 // 67
  147, // Mulan New In hex:  93 CA 81 61  In dec:  147 202 129 97 // 68
  243, // Aurora New In hex:  F3 F6 5B 61  In dec:  243 246 91 97 // 69
- 227  // Belle New In hex:  E3 6E 82 61  In dec:  227 110 130 97 // 70
+ 227, // Belle New In hex:  E3 6E 82 61  In dec:  227 110 130 97 // 70
+ 51,  // Carlita In hex:  33 C1 7A 61 In dec:  51 193 122 97 // 71
+ 163, // Pandy In hex:  A3 A7 7B 61 In dec:  163 167 123 97 // 72
+ 163, // Mercat 1 In hex:  A3 D0 79 61 In dec:  163 208 121 97 // 73
+ 131, // Mercat 2 In hex:  83 B3 69 61 In dec:  131 179 105 97 // 74
+ 19,  // Box Cat In hex:  13 61 79 61 In dec:  19 97 121 97 // 75
+ 211, // DJ Catnip In hex:  D3 C2 6A 61 In dec:  211 194 106 97 // 76
+ 67,  // Catrat In hex:  43 6E 78 61 In dec:  67 110 120 97 // 77
+ 67,  // Pillowcat In hex:  43 FF 5A 61 In dec:  67 255 90 97 // 78
+ 67,  // Cupcake In hex:  43 E0 78 61 In dec:  67 224 120 97 // 79
+ 35,  // Gabby In hex:  23 4C 7A 61 In dec:  35 76 122 97 // 80
+ 131, // Kitty Fairy In hex:  83 35 7B 61 In dec:  131 53 123 97 // 81
+ 51,  // Big Puzzle 1 In hex:  33 88 6E 61 In dec:  51 136 110 97 // 82
+ 227, // Big Puzzle 2 In hex:  E3 00 6F 61 In dec:  227 00 111 97 // 83
+ 03,  // Big Puzzle 3 In hex:  03 7C 6F 61 In dec:  03 124 111 97 // 84
+ 179, // Big Puzzle 4 In hex:  B3 F8 6F 61 In dec:  179 248 111 97 // 85
+ 67,  // Little Puzzle 1 In hex:  43 74 67 61 In dec:  67 116 103 97 // 86
+ 99,  // Little Puzzle 2 In hex:  63 E5 66 61 In dec:  99 229 102 97 // 87
+ 99,  // Little Puzzle 3 In hex:  63 CF 65 61 In dec:  99 207 101 97 // 88
+ 211  // Little Puzzle 4 In hex:  D3 55 66 61 In dec:  211 85 102 97 // 89
  };
 
 const unsigned int PROGMEM character_nuid_two[NUM_NUIDS] =
@@ -253,7 +272,26 @@ const unsigned int PROGMEM character_nuid_two[NUM_NUIDS] =
  103, // Tiana New In hex:  83 67 81 61  In dec:  131 103 129 97
  202, // Mulan New In hex:  93 CA 81 61  In dec:  147 202 129 97
  246, // Aurora New In hex:  F3 F6 5B 61  In dec:  243 246 91 97
- 110  // Belle New In hex:  E3 6E 82 61  In dec:  227 110 130 97
+ 110, // Belle New In hex:  E3 6E 82 61  In dec:  227 110 130 97
+ 193, // Carlita In hex:  33 C1 7A 61 In dec:  51 193 122 97 // 71
+ 167, // Pandy In hex:  A3 A7 7B 61 In dec:  163 167 123 97 // 72
+ 208, // Mercat 1 In hex:  A3 D0 79 61 In dec:  163 208 121 97 // 73
+ 179, // Mercat 2 In hex:  83 B3 69 61 In dec:  131 179 105 97 // 74
+ 97,  // Box Cat In hex:  13 61 79 61 In dec:  19 97 121 97 // 75
+ 194, // DJ Catnip In hex:  D3 C2 6A 61 In dec:  211 194 106 97 // 76
+ 110, // Catrat In hex:  43 6E 78 61 In dec:  67 110 120 97 // 77
+ 255, // Pillowcat In hex:  43 FF 5A 61 In dec:  67 255 90 97 // 78
+ 224, // Cupcake In hex:  43 E0 78 61 In dec:  67 224 120 97 // 79
+ 76,  // Gabby In hex:  23 4C 7A 61 In dec:  35 76 122 97 // 80
+ 53,  // Kitty Fairy In hex:  83 35 7B 61 In dec:  131 53 123 97 // 81
+ 136, // Big Puzzle 1 In hex:  33 88 6E 61 In dec:  51 136 110 97 // 82
+ 00,  // Big Puzzle 2 In hex:  E3 00 6F 61 In dec:  227 00 111 97 // 83
+ 124, // Big Puzzle 3 In hex:  03 7C 6F 61 In dec:  03 124 111 97 // 84
+ 248, // Big Puzzle 4 In hex:  B3 F8 6F 61 In dec:  179 248 111 97 // 85
+ 116, // Little Puzzle 1 In hex:  43 74 67 61 In dec:  67 116 103 97 // 86
+ 229, // Little Puzzle 2 In hex:  63 E5 66 61 In dec:  99 229 102 97 // 87
+ 207, // Little Puzzle 3 In hex:  63 CF 65 61 In dec:  99 207 101 97 // 88
+ 85   // Little Puzzle 4 In hex:  D3 55 66 61 In dec:  211 85 102 97 // 89
  };
 
 const unsigned int PROGMEM character_nuid_three[NUM_NUIDS] =
@@ -325,8 +363,27 @@ const unsigned int PROGMEM character_nuid_three[NUM_NUIDS] =
  129, // Snow White New In hex:  93 18 81 61  In dec:  147 24 129 97
  129, // Tiana New In hex:  83 67 81 61  In dec:  131 103 129 97
  129, // Mulan New In hex:  93 CA 81 61  In dec:  147 202 129 97
- 91, // Aurora New In hex:  F3 F6 5B 61  In dec:  243 246 91 97
- 130  // Belle New In hex:  E3 6E 82 61  In dec:  227 110 130 97
+ 91,  // Aurora New In hex:  F3 F6 5B 61  In dec:  243 246 91 97
+ 130, // Belle New In hex:  E3 6E 82 61  In dec:  227 110 130 97 // 70
+ 122, // Carlita In hex:  33 C1 7A 61 In dec:  51 193 122 97 // 71
+ 123, // Pandy In hex:  A3 A7 7B 61 In dec:  163 167 123 97 // 72
+ 121, // Mercat 1 In hex:  A3 D0 79 61 In dec:  163 208 121 97 // 73
+ 105, // Mercat 2 In hex:  83 B3 69 61 In dec:  131 179 105 97 // 74
+ 121, // Box Cat In hex:  13 61 79 61 In dec:  19 97 121 97 // 75
+ 106, // DJ Catnip In hex:  D3 C2 6A 61 In dec:  211 194 106 97 // 76
+ 120, // Catrat In hex:  43 6E 78 61 In dec:  67 110 120 97 // 77
+ 90,  // Pillowcat In hex:  43 FF 5A 61 In dec:  67 255 90 97 // 78
+ 120, // Cupcake In hex:  43 E0 78 61 In dec:  67 224 120 97 // 79
+ 122, // Gabby In hex:  23 4C 7A 61 In dec:  35 76 122 97 // 80
+ 123, // Kitty Fairy In hex:  83 35 7B 61 In dec:  131 53 123 97 // 81
+ 110, // Big Puzzle 1 In hex:  33 88 6E 61 In dec:  51 136 110 97 // 82
+ 111, // Big Puzzle 2 In hex:  E3 00 6F 61 In dec:  227 00 111 97 // 83
+ 111, // Big Puzzle 3 In hex:  03 7C 6F 61 In dec:  03 124 111 97 // 84
+ 111, // Big Puzzle 4 In hex:  B3 F8 6F 61 In dec:  179 248 111 97 // 85
+ 103, // Little Puzzle 1 In hex:  43 74 67 61 In dec:  67 116 103 97 // 86
+ 102, // Little Puzzle 2 In hex:  63 E5 66 61 In dec:  99 229 102 97 // 87
+ 101, // Little Puzzle 3 In hex:  63 CF 65 61 In dec:  99 207 101 97 // 88
+ 102  // Little Puzzle 4 In hex:  D3 55 66 61 In dec:  211 85 102 97 // 89
  };
 
 const unsigned int PROGMEM character_nuid_four[NUM_NUIDS] =
@@ -399,7 +456,26 @@ const unsigned int PROGMEM character_nuid_four[NUM_NUIDS] =
  97, // Tiana New In hex:  83 67 81 61  In dec:  131 103 129 97
  97, // Mulan New In hex:  93 CA 81 61  In dec:  147 202 129 97
  97, // Aurora New In hex:  F3 F6 5B 61  In dec:  243 246 91 97
- 97  // Belle New In hex:  E3 6E 82 61  In dec:  227 110 130 97
+ 97, // Belle New In hex:  E3 6E 82 61  In dec:  227 110 130 97
+ 97, // Carlita In hex:  33 C1 7A 61 In dec:  51 193 122 97 // 71
+ 97, // Pandy In hex:  A3 A7 7B 61 In dec:  163 167 123 97 // 72
+ 97, // Mercat 1 In hex:  A3 D0 79 61 In dec:  163 208 121 97 // 73
+ 97, // Mercat 2 In hex:  83 B3 69 61 In dec:  131 179 105 97 // 74
+ 97, // Box Cat In hex:  13 61 79 61 In dec:  19 97 121 97 // 75
+ 97, // DJ Catnip In hex:  D3 C2 6A 61 In dec:  211 194 106 97 // 76
+ 97, // Catrat In hex:  43 6E 78 61 In dec:  67 110 120 97 // 77
+ 97, // Pillowcat In hex:  43 FF 5A 61 In dec:  67 255 90 97 // 78
+ 97, // Cupcake In hex:  43 E0 78 61 In dec:  67 224 120 97 // 79
+ 97, // Gabby In hex:  23 4C 7A 61 In dec:  35 76 122 97 // 80
+ 97, // Kitty Fairy In hex:  83 35 7B 61 In dec:  131 53 123 97 // 81
+ 97, // Big Puzzle 1 In hex:  33 88 6E 61 In dec:  51 136 110 97 // 82
+ 97, // Big Puzzle 2 In hex:  E3 00 6F 61 In dec:  227 00 111 97 // 83
+ 97, // Big Puzzle 3 In hex:  03 7C 6F 61 In dec:  03 124 111 97 // 84
+ 97, // Big Puzzle 4 In hex:  B3 F8 6F 61 In dec:  179 248 111 97 // 85
+ 97, // Little Puzzle 1 In hex:  43 74 67 61 In dec:  67 116 103 97 // 86
+ 97, // Little Puzzle 2 In hex:  63 E5 66 61 In dec:  99 229 102 97 // 87
+ 97, // Little Puzzle 3 In hex:  63 CF 65 61 In dec:  99 207 101 97 // 88
+ 97  // Little Puzzle 4In hex:  D3 55 66 61 In dec:  211 85 102 97 // 89
  };
 
  const unsigned int PROGMEM character_colors[NUM_NUIDS][3] =
@@ -472,7 +548,26 @@ const unsigned int PROGMEM character_nuid_four[NUM_NUIDS] =
  {DISP_COLOR_MINT, DISP_COLOR_MINT, DISP_COLOR_SEA_GREEN},                   // co Tiana New (Green) - In hex:  83 67 81 61  In dec:  131 103 129 97
  {DISP_COLOR_DEEP_SKY_BLUE, DISP_COLOR_DARK_BLUE, DISP_COLOR_RED},           // cp Mulan New (Dress) - In hex:  93 CA 81 61  In dec:  147 202 129 97
  {DISP_COLOR_PINK, DISP_COLOR_YELLOW, DISP_COLOR_PINK},                      // cq Aurora New (Pink) - In hex:  F3 F6 5B 61  In dec:  243 246 91 97
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW}                   // cr Belle New (Yellow) - In hex:  E3 6E 82 61  In dec:  227 110 130 97
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // cr Belle New (Yellow) - In hex:  E3 6E 82 61  In dec:  227 110 130 97 // 70
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Carlita In hex:  33 C1 7A 61 In dec:  51 193 122 97 // 71
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Pandy In hex:  A3 A7 7B 61 In dec:  163 167 123 97 // 72
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Mercat 1 In hex:  A3 D0 79 61 In dec:  163 208 121 97 // 73
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Mercat 2 In hex:  83 B3 69 61 In dec:  131 179 105 97 // 74
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Box Cat In hex:  13 61 79 61 In dec:  19 97 121 97 // 75
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // DJ Catnip In hex:  D3 C2 6A 61 In dec:  211 194 106 97 // 76
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Catrat In hex:  43 6E 78 61 In dec:  67 110 120 97 // 77
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Pillowcat In hex:  43 FF 5A 61 In dec:  67 255 90 97 // 78
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Cupcake In hex:  43 E0 78 61 In dec:  67 224 120 97 // 79
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Gabby In hex:  23 4C 7A 61 In dec:  35 76 122 97 // 80
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Kitty Fairy In hex:  83 35 7B 61 In dec:  131 53 123 97 // 81
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Big Puzzle 1 In hex:  33 88 6E 61 In dec:  51 136 110 97 // 82
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Big Puzzle 2 In hex:  E3 00 6F 61 In dec:  227 00 111 97 // 83
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Big Puzzle 3 In hex:  03 7C 6F 61 In dec:  03 124 111 97 // 84
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Big Puzzle 4 In hex:  B3 F8 6F 61 In dec:  179 248 111 97 // 85
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Little Puzzle 1 In hex:  43 74 67 61 In dec:  67 116 103 97 // 86
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Little Puzzle 2 In hex:  63 E5 66 61 In dec:  99 229 102 97 // 87
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Little Puzzle 3 In hex:  63 CF 65 61 In dec:  99 207 101 97 // 88
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Little Puzzle 4 In hex:  D3 55 66 61 In dec:  211 85 102 97 // 89
  };
 
  
@@ -505,8 +600,6 @@ byte nuidPICC[4];
 
 
 
-
-//void printDetail(uint8_t type, int value);
 
 
 void display_leds_three(unsigned int color_num_1, unsigned int color_num_2, unsigned int color_num_3)
@@ -595,60 +688,6 @@ void printDec(byte *buffer, byte bufferSize) {
   }
 }
 
-//void printDetail(uint8_t type, int value){
-//  switch (type) {
-//    case TimeOut:
-//      Serial.println(F("Time Out!"));
-//      break;
-//    case WrongStack:
-//      Serial.println(F("Stack Wrong!"));
-//      break;
-//    case DFPlayerCardInserted:
-//      Serial.println(F("Card Inserted!"));
-//      break;
-//    case DFPlayerCardRemoved:
-//      Serial.println(F("Card Removed!"));
-//      break;
-//    case DFPlayerCardOnline:
-//      Serial.println(F("Card Online!"));
-//      break;
-//    case DFPlayerPlayFinished:
-//      Serial.print(F("Number:"));
-//      Serial.print(value);
-//      Serial.println(F(" Play Finished!"));
-//      break;
-//    case DFPlayerError:
-//      Serial.print(F("DFPlayerError:"));
-//      switch (value) {
-//        case Busy:
-//          Serial.println(F("Card not found"));
-//          break;
-//        case Sleeping:
-//          Serial.println(F("Sleeping"));
-//          break;
-//        case SerialWrongStack:
-//          Serial.println(F("Get Wrong Stack"));
-//          break;
-//        case CheckSumNotMatch:
-//          Serial.println(F("Check Sum Not Match"));
-//          break;
-//        case FileIndexOut:
-//          Serial.println(F("File Index Out of Bound"));
-//          break;
-//        case FileMismatch:
-//          Serial.println(F("Cannot Find File"));
-//          break;
-//        case Advertise:
-//          Serial.println(F("In Advertise"));
-//          break;
-//        default:
-//          break;
-//      }
-//      break;
-//    default:
-//      break;
-//  }
-//}
 
 unsigned int current_phase = 99;
 
@@ -656,117 +695,175 @@ unsigned int current_phase = 99;
 
 void perform_phase_1()
 {
-  myDFPlayer.playMp3Folder(10);
-  delay(15000);
+  // Play Gabby 1
+  sprintf(dataString,"DOUG%02d",1); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(32000);                     // wait until movie ends
+  
+  // Light up house
+  delay(2000);
+
+  // Play Gabby 2
+  sprintf(dataString,"DOUG%02d",2); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(12000);                     // wait until movie ends
+
+  // Light up mail box
+  delay(2000);
+
+  // Play Gabby 3
+  sprintf(dataString,"DOUG%02d",3); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(94000);                     // wait until movie ends
+
+  // Light up playroom
+  delay(2000);
+
+  // Play Gabby 4
+  sprintf(dataString,"DOUG%02d",4); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(21000);                     // wait until movie ends
+
+  // Light up house
+  delay(2000);
+
+  // Play Gabby 5
+  sprintf(dataString,"DOUG%02d",5); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(13000);                     // wait until movie ends
+
+  
+  //myDFPlayer.playMp3Folder(10);
+  //delay(15000);
 }
 
 void perform_phase_2()
 {
-  delay(20000);
-  myDFPlayer.playMp3Folder(78);
+  // Play Gabby 6
+  sprintf(dataString,"DOUG%02d",6); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(25000);                     // wait until movie ends
 }
 
 void perform_phase_3()
 {
-  delay(15000);
-  myDFPlayer.playMp3Folder(81);
+  // Play Gabby 7
+  sprintf(dataString,"DOUG%02d",7); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(52000);                     // wait until movie ends
+
+  // Light up bathroom
+  delay(2000);
+
+  // Play Gabby 8
+  sprintf(dataString,"DOUG%02d",8); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(38000);                     // wait until movie ends
 }
 
 void perform_phase_4()
 {
-  delay(20000);
-  myDFPlayer.playMp3Folder(83);
+  // Play Gabby 9
+  sprintf(dataString,"DOUG%02d",9); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(51000);                     // wait until movie ends
+
+  // Light up bedroom
+  delay(2000);
+
+  // Play Gabby 10
+  sprintf(dataString,"DOUG%02d",10); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(86000);                     // wait until movie ends
 }
 
 void perform_phase_5()
 {
-  delay(17000);
-  myDFPlayer.playMp3Folder(85);
+  // Play Gabby 11
+  sprintf(dataString,"DOUG%02d",11); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(51000);                     // wait until movie ends
+
+  // Light up music room
+  delay(2000);
+
+  // Play Gabby 12
+  sprintf(dataString,"DOUG%02d",12); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(34000);                     // wait until movie ends
 }
 
 void perform_phase_6()
 {
-  delay(20000);
-  myDFPlayer.playMp3Folder(87);
+  // Play Gabby 13
+  sprintf(dataString,"DOUG%02d",13); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(38000);                     // wait until movie ends
 }
 
 void perform_phase_7()
 {
-  delay(20000);
-  myDFPlayer.playMp3Folder(89);
+  // Play Gabby 14
+  sprintf(dataString,"DOUG%02d",14); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(57000);                     // wait until movie ends
 }
 
 void perform_phase_8()
 {
-  delay(15000);
-  myDFPlayer.playMp3Folder(92);
+  // Light up music room
+  delay(2000);
+
+  // Play Gabby 15
+  sprintf(dataString,"DOUG%02d",15); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  delay(11000);                     // wait until movie ends
 }
 
-void perform_phase_9()
-{
-  delay(20000);
-  myDFPlayer.playMp3Folder(94); 
-}
-
-void perform_phase_10()
-{
-  delay(18000);
-  myDFPlayer.playMp3Folder(98);
-}
 
 
 
 void perform_action(int matched_char)
 {
-  if ((current_phase == 99) && ((matched_char == 22) || (matched_char == 23)))
+  if ((current_phase == 99) && ((matched_char == 22) || (matched_char == 23) || (matched_char == 10)))
   {
     current_phase = 1;
     perform_phase_1();
   }
-  else if ((current_phase == 1) && (matched_char == 69))
+  else if ((current_phase == 1) && ((matched_char == 72) ||(matched_char == 22) || (matched_char == 23) || (matched_char == 10)))
   {
     current_phase = 2;
     perform_phase_2();
   }
-  else if ((current_phase == 2) && (matched_char == 66))
+  else if ((current_phase == 2) && ((matched_char == 82) || (matched_char == 86) ||(matched_char == 22) || (matched_char == 23) || (matched_char == 10)))
   {
     current_phase = 3;
     perform_phase_3();
   }
-  else if ((current_phase == 3) && (matched_char == 65))
+  else if ((current_phase == 3) && ((matched_char == 83) || (matched_char == 87) ||(matched_char == 22) || (matched_char == 23) || (matched_char == 10)))
   {
     current_phase = 4;
     perform_phase_4();
   }
-  else if ((current_phase == 4) && (matched_char == 63))
+  else if ((current_phase == 4) && ((matched_char == 84) || (matched_char == 88) ||(matched_char == 22) || (matched_char == 23) || (matched_char == 10)))
   {
     current_phase = 5;
     perform_phase_5();
   }
-  else if ((current_phase == 5) && (matched_char == 67))
+  else if ((current_phase == 5) && ((matched_char == 85) || (matched_char == 89) ||(matched_char == 22) || (matched_char == 23) || (matched_char == 10)))
   {
     current_phase = 6;
     perform_phase_6();
   }
-  else if ((current_phase == 6) && (matched_char == 64))
+  else if ((current_phase == 6) && ((matched_char == 22) || (matched_char == 23) || (matched_char == 10)))
   {
     current_phase = 7;
     perform_phase_7();
   }
-  else if ((current_phase == 7) && (matched_char == 68))
+  else if ((current_phase == 7) && (matched_char > 0))
   {
-    current_phase = 8;
+    current_phase = 98;
     perform_phase_8();
-  }
-  else if ((current_phase == 8) && ((matched_char == 42) ||(matched_char == 43)))
-  {
-    current_phase = 9;
-    perform_phase_9();
-  }
-  else if ((current_phase == 9) && (matched_char == 70))
-  {
-    current_phase = 99; // restart
-    perform_phase_10();
   }
 }
 
@@ -774,15 +871,8 @@ void perform_action(int matched_char)
 void loop()
 {
 
-   sprintf(dataString,"DOUG%02X",1); // convert a value to hexa 
-   Serial.println(dataString);   // send the data
-   delay(10000);                  // give the loop some break
-   sprintf(dataString,"DOUG%02X",2); // convert a value to hexa 
-   Serial.println(dataString);   // send the data
-   delay(10000);                  // give the loop some break
-   sprintf(dataString,"DOUG%02X",3); // convert a value to hexa 
-   Serial.println(dataString);   // send the data
-   delay(10000);                  // give the loop some break
+  if (current_phase == 98)
+     current_phase = 99;
 
   // Reset the loop if no new card present on the sensor/reader. This saves the entire process when idle.
   if ( ! rfid.PICC_IsNewCardPresent())
@@ -844,24 +934,20 @@ void loop()
 
       if (matched_character != track_num_current)
       {
-        if ((matched_character != 22) && (matched_character != 23))
-        {
-           myDFPlayer.playMp3Folder(matched_character);
-        }
-        track_num_current = matched_character;
-
-        display_leds_three(pgm_read_word_near(&character_colors[matched_character][0]), pgm_read_word_near(&character_colors[matched_character][1]), pgm_read_word_near(&character_colors[matched_character][2]));
-
-        delay(100);
         // perform action if something to perform
         perform_action(matched_character);
+        delay(100);
+
+        if (current_phase == 99)
+        {
+           myDFPlayer.playMp3Folder(matched_character);
+        
+           track_num_current = matched_character;
+
+           display_leds_three(pgm_read_word_near(&character_colors[matched_character][0]), pgm_read_word_near(&character_colors[matched_character][1]), pgm_read_word_near(&character_colors[matched_character][2]));
+        }
       }
-
-      //if (myDFPlayer.available()) 
-      //{
-      //  printDetail(myDFPlayer.readType(), myDFPlayer.read()); //Print the detail message from DFPlayer to handle different errors and states.
-      //} 
-
+      
     }
   }
   else Serial.println(F("Card read previously."));

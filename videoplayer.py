@@ -13,6 +13,32 @@ import time
 #GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 #GPIO.setup(24, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
+# username: pi
+# password: raspberry
+# First, you’ll need to install the Raspberry Pi operating system (previously called Raspbian) onto a microSD card. 
+# The Raspberry Pi website provides a tool called Raspberry Pi Imager to prepare the microSD card on Windows, macOS, and Ubuntu.
+# Download and run the Raspberry Pi Imager, and select the Raspberry Pi OS (other) option from the menu, then the Raspberry Pi OS Lite (32-bit) option. 
+# The lite option is all we need, since we don’t need a full desktop for this project. The Imager will prepare the SD card with the OS.
+# Not bullseye. need older version
+# OS loads on SD card, nothing else goes on card. Transfer files via USB hard drive.
+
+# Install omxplayer
+# sudo apt-get update
+# sudo apt-get install python3-pip omxplayer fbi
+
+# Mount USB drive
+# ls -l /dev/disk/by-uuid/
+# sudo mkdir /media/usb
+# sudo chown -R pi:pi /media/usb
+# sudo mount /dev/sda1 /media/usb -o uid=pi,gid=pi
+# sudo umount /media/usb
+
+# find usb
+# ls /dev/tty*
+
+# Need to use python3
+# sudo apt-get install python3-serial
+
 mov1 = ("/home/pi/videos/Gabby_1.mp4")
 mov2 = ("/home/pi/videos/Gabby_2.mp4")
 mov3 = ("/home/pi/videos/Gabby_3.mp4")
@@ -59,7 +85,7 @@ while True:
         
         read_serial=ser.readline().decode('utf-8')
         if "DOUG" in read_serial
-            mov_num = int (read_serial[5:6],16)
+            mov_num = int (read_serial[4:6])
             if mov_num > 0 and mov_num < 16:
                 omxc.load(movies[mov_num - 1])
                 time.sleep(movie_times[mov_num - 1])
