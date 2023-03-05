@@ -37,13 +37,23 @@
  * SPI SCK     SCK          13 / ICSP-3   52        D13        ICSP-3           15
  */
 
-#define NUM_LEDS    138
+#define NUM_LEDS    217
+#define FIRST_HOUSE_LED 61
+#define FIRST_MUSIC_ROOM_LED 72
+#define LAST_MUSIC_ROOM_LED 81
+#define FIRST_PLAYROOM_LED 203
+#define LAST_PLAYROOM_LED 216
+#define FIRST_TOP_FLOOR_LED 185
+#define FIRST_BATHROOM_LED 144
+#define LAST_BATHROOM_LED 158
+#define FIRST_BEDROOM_LED 161
+#define LAST_BEDROOM_LED 175
 
-#define BRIGHTNESS  30
+#define BRIGHTNESS  40
 #define LED_TYPE    WS2812B
 #define COLOR_ORDER GRB
 
-#define VOLUME_MUSIC 25
+#define VOLUME_MUSIC 20
 
 #define LED_PIN     7
 
@@ -479,30 +489,30 @@ const unsigned int PROGMEM character_nuid_four[NUM_NUIDS] =
  };
 
  const unsigned int PROGMEM character_colors[NUM_NUIDS][3] =
-{{DISP_COLOR_BLUE, DISP_COLOR_YELLOW, DISP_COLOR_BLUE},                      // aa Cinderella 1 (Blue) - Hex: E0 7A B7 51 Dec:  224 122 183 81
- {DISP_COLOR_BLUE, DISP_COLOR_YELLOW, DISP_COLOR_BLUE},                      // ab Cinderella 2 (Blue) - In hex:  C0 C9 B7 51 In dec:  192 201 183 81
- {DISP_COLOR_DARK_RED, DISP_COLOR_WHITE, DISP_COLOR_YELLOW},                 // ac Prince Charming - In hex:  C0 8A B7 51 In dec:  192 138 183 81
- {DISP_COLOR_FAIRY_LIGHT, DISP_COLOR_DARK_TURQ, DISP_COLOR_FAIRY_LIGHT},     // ad Pocahontas - In hex:  36 C0 41 33 In dec:  54 192 65 51
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // ae Belle 1 (Yellow) - In hex:  C0 9A B7 51 In dec:  192 154 183 81
- {DISP_COLOR_MED_BLUE, DISP_COLOR_PINK, DISP_COLOR_WHITE},                   // af Fairy Godmother - In hex:  C0 AA B7 51 In dec:  192 170 183 81
- {DISP_COLOR_SPRING_GREEN, DISP_COLOR_SPRING_GREEN, DISP_COLOR_ORANGE_RED},  // ag Merida 1 (Green) - In hex:  C0 BA B7 51 In dec:  192 186 183 81
- {DISP_COLOR_TEAL, DISP_COLOR_TEAL, DISP_COLOR_TEAL},                        // ah Jasmine 1 (Green) - In hex:  40 D7 B7 51 In dec:  64 215 183 81
- {DISP_COLOR_DEEP_SKY_BLUE, DISP_COLOR_DARK_BLUE, DISP_COLOR_RED},           // ai Mulan 1 (Dress) - In hex:  30 E7 B7 51 In dec:  48 231 183 81
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_WHITE},                   // aj Lumiere - In hex:  E0 F6 B7 51 In dec:  224 246 183 81
- {DISP_COLOR_DARK_RED, DISP_COLOR_YELLOW, DISP_COLOR_GREEN},                 // ak Gus and Jaq - In hex:  A0 04 B8 51 In dec:  160 04 184 81
- {DISP_COLOR_PURPLE, DISP_COLOR_YELLOW, DISP_COLOR_PURPLE},                  // al Rapunzel 1 (Purple) - In hex:  40 58 B7 51 In dec:  64 88 183 81
- {DISP_COLOR_PINK, DISP_COLOR_YELLOW, DISP_COLOR_PINK},                      // am Aurora 1 (Pink) - In hex: In hex:  40 66 B7 51 In dec:  64 102 183 81
- {DISP_COLOR_WHITE, DISP_COLOR_ORANGE, DISP_COLOR_WHITE},                    // an Olaf 1 - In hex:  A0 C4 B7 51 In dec:  160 196 183 81
- {DISP_COLOR_MINT, DISP_COLOR_MINT, DISP_COLOR_SEA_GREEN},                   // ao Tiana 1 (Green) - In hex:  20 D2 B7 51 In dec:  32 210 183 81
- {DISP_COLOR_DARK_RED, DISP_COLOR_BLUE, DISP_COLOR_YELLOW},                  // ap Snow White 1 (Dress) - In hex:  20 E1 B7 51 In dec:  32 225 183 81
- {DISP_COLOR_DARK_GREEN, DISP_COLOR_YELLOW, DISP_COLOR_DARK_RED},            // aq Hei Hei 1 - In hex:  C0 CD B6 51 In dec:  192 205 182 81
- {DISP_COLOR_WHITE, DISP_COLOR_PINK, DISP_COLOR_WHITE},                      // ar Pua 1 - In hex:  F0 BD B6 51 In dec:  240 189 182 81
- {DISP_COLOR_BLUE, DISP_COLOR_BLUE, DISP_COLOR_BLUE},                        // as Genie 1 - In hex:  B0 DD B6 51 In dec:  176 221 182 81
- {DISP_COLOR_YELLOW, DISP_COLOR_RED, DISP_COLOR_WHITE},                      // at Mickey - In hex:  80 05 B8 51 In dec:  128 05 184 81
- {DISP_COLOR_PURPLE, DISP_COLOR_YELLOW, DISP_COLOR_PINK},                    // au Daisy - In hex:  90 05 B8 51 In dec:  144 05 184 81
- {DISP_COLOR_YELLOW, DISP_COLOR_WHITE, DISP_COLOR_BLUE},                     // av Donald - In hex:  20 F8 B7 51 In dec:  32 248 183 81
- {DISP_COLOR_DARK_BLUE,DISP_COLOR_ORANGE, DISP_COLOR_DARK_GREEN},            // aw Goofy - In hex:  A0 E8 B7 51 In dec:  160 232 183 81
- {DISP_COLOR_PINK, DISP_COLOR_WHITE, DISP_COLOR_PINK},                       // ax Minnie - In hex:  E0 DD B7 51 In dec:  224 221 183 81
+{{DISP_COLOR_BLUE, DISP_COLOR_YELLOW, DISP_COLOR_BLUE},                      // aa Cinderella 1 (Blue) - Hex: E0 7A B7 51 Dec:  224 122 183 81           // 1
+ {DISP_COLOR_BLUE, DISP_COLOR_YELLOW, DISP_COLOR_BLUE},                      // ab Cinderella 2 (Blue) - In hex:  C0 C9 B7 51 In dec:  192 201 183 81    // 2
+ {DISP_COLOR_DARK_RED, DISP_COLOR_WHITE, DISP_COLOR_YELLOW},                 // ac Prince Charming - In hex:  C0 8A B7 51 In dec:  192 138 183 81        // 3
+ {DISP_COLOR_FAIRY_LIGHT, DISP_COLOR_DARK_TURQ, DISP_COLOR_FAIRY_LIGHT},     // ad Pocahontas - In hex:  36 C0 41 33 In dec:  54 192 65 51               // 4
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // ae Belle 1 (Yellow) - In hex:  C0 9A B7 51 In dec:  192 154 183 81       // 5
+ {DISP_COLOR_MED_BLUE, DISP_COLOR_PINK, DISP_COLOR_WHITE},                   // af Fairy Godmother - In hex:  C0 AA B7 51 In dec:  192 170 183 81        // 6
+ {DISP_COLOR_SPRING_GREEN, DISP_COLOR_SPRING_GREEN, DISP_COLOR_ORANGE_RED},  // ag Merida 1 (Green) - In hex:  C0 BA B7 51 In dec:  192 186 183 81       // 7
+ {DISP_COLOR_TEAL, DISP_COLOR_TEAL, DISP_COLOR_TEAL},                        // ah Jasmine 1 (Green) - In hex:  40 D7 B7 51 In dec:  64 215 183 81       // 8
+ {DISP_COLOR_DEEP_SKY_BLUE, DISP_COLOR_DARK_BLUE, DISP_COLOR_RED},           // ai Mulan 1 (Dress) - In hex:  30 E7 B7 51 In dec:  48 231 183 81         // 9
+ {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_WHITE},                   // aj Lumiere - In hex:  E0 F6 B7 51 In dec:  224 246 183 81                // 10
+ {DISP_COLOR_DARK_RED, DISP_COLOR_YELLOW, DISP_COLOR_GREEN},                 // ak Gus and Jaq - In hex:  A0 04 B8 51 In dec:  160 04 184 81             // 11
+ {DISP_COLOR_PURPLE, DISP_COLOR_YELLOW, DISP_COLOR_PURPLE},                  // al Rapunzel 1 (Purple) - In hex:  40 58 B7 51 In dec:  64 88 183 81      // 12
+ {DISP_COLOR_PINK, DISP_COLOR_YELLOW, DISP_COLOR_PINK},                      // am Aurora 1 (Pink) - In hex: In hex:  40 66 B7 51 In dec:  64 102 183 81 // 13
+ {DISP_COLOR_WHITE, DISP_COLOR_ORANGE, DISP_COLOR_WHITE},                    // an Olaf 1 - In hex:  A0 C4 B7 51 In dec:  160 196 183 81                 // 14
+ {DISP_COLOR_MINT, DISP_COLOR_MINT, DISP_COLOR_SEA_GREEN},                   // ao Tiana 1 (Green) - In hex:  20 D2 B7 51 In dec:  32 210 183 81         // 15
+ {DISP_COLOR_DARK_RED, DISP_COLOR_BLUE, DISP_COLOR_YELLOW},                  // ap Snow White 1 (Dress) - In hex:  20 E1 B7 51 In dec:  32 225 183 81    // 16
+ {DISP_COLOR_DARK_GREEN, DISP_COLOR_YELLOW, DISP_COLOR_DARK_RED},            // aq Hei Hei 1 - In hex:  C0 CD B6 51 In dec:  192 205 182 81              // 17
+ {DISP_COLOR_WHITE, DISP_COLOR_PINK, DISP_COLOR_WHITE},                      // ar Pua 1 - In hex:  F0 BD B6 51 In dec:  240 189 182 81                  // 18
+ {DISP_COLOR_BLUE, DISP_COLOR_BLUE, DISP_COLOR_BLUE},                        // as Genie 1 - In hex:  B0 DD B6 51 In dec:  176 221 182 81                // 19
+ {DISP_COLOR_YELLOW, DISP_COLOR_RED, DISP_COLOR_WHITE},                      // at Mickey - In hex:  80 05 B8 51 In dec:  128 05 184 81                  // 20
+ {DISP_COLOR_PURPLE, DISP_COLOR_YELLOW, DISP_COLOR_PINK},                    // au Daisy - In hex:  90 05 B8 51 In dec:  144 05 184 81                   // 21
+ {DISP_COLOR_YELLOW, DISP_COLOR_WHITE, DISP_COLOR_BLUE},                     // av Donald - In hex:  20 F8 B7 51 In dec:  32 248 183 81                  // 22
+ {DISP_COLOR_DARK_BLUE,DISP_COLOR_ORANGE, DISP_COLOR_DARK_GREEN},            // aw Goofy - In hex:  A0 E8 B7 51 In dec:  160 232 183 81                  // 23
+ {DISP_COLOR_PINK, DISP_COLOR_WHITE, DISP_COLOR_PINK},                       // ax Minnie - In hex:  E0 DD B7 51 In dec:  224 221 183 81                 // 24
  {DISP_COLOR_MINT, DISP_COLOR_WHITE, DISP_COLOR_PINK},                       // ay Vanellope (WIR) - In hex:  30 C4 B7 51 In dec:  48 196 183 81
  {DISP_COLOR_GREEN, DISP_COLOR_PURPLE, DISP_COLOR_DARK_RED},                 // az Ariel (WIR) - In hex:  30 B4 B7 51 In dec:  48 180 183 81
  {DISP_COLOR_DARK_BLUE, DISP_COLOR_DARK_TURQ, DISP_COLOR_FAIRY_LIGHT},       // ba Elsa (WIR) - In hex:  30 A6 B7 51 In dec:  48 166 183 81
@@ -549,17 +559,17 @@ const unsigned int PROGMEM character_nuid_four[NUM_NUIDS] =
  {DISP_COLOR_DEEP_SKY_BLUE, DISP_COLOR_DARK_BLUE, DISP_COLOR_RED},           // cp Mulan New (Dress) - In hex:  93 CA 81 61  In dec:  147 202 129 97
  {DISP_COLOR_PINK, DISP_COLOR_YELLOW, DISP_COLOR_PINK},                      // cq Aurora New (Pink) - In hex:  F3 F6 5B 61  In dec:  243 246 91 97
  {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // cr Belle New (Yellow) - In hex:  E3 6E 82 61  In dec:  227 110 130 97 // 70
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Carlita In hex:  33 C1 7A 61 In dec:  51 193 122 97 // 71
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Pandy In hex:  A3 A7 7B 61 In dec:  163 167 123 97 // 72
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Mercat 1 In hex:  A3 D0 79 61 In dec:  163 208 121 97 // 73
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Mercat 2 In hex:  83 B3 69 61 In dec:  131 179 105 97 // 74
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Box Cat In hex:  13 61 79 61 In dec:  19 97 121 97 // 75
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // DJ Catnip In hex:  D3 C2 6A 61 In dec:  211 194 106 97 // 76
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Catrat In hex:  43 6E 78 61 In dec:  67 110 120 97 // 77
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Pillowcat In hex:  43 FF 5A 61 In dec:  67 255 90 97 // 78
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Cupcake In hex:  43 E0 78 61 In dec:  67 224 120 97 // 79
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Gabby In hex:  23 4C 7A 61 In dec:  35 76 122 97 // 80
- {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Kitty Fairy In hex:  83 35 7B 61 In dec:  131 53 123 97 // 81
+ {DISP_COLOR_PURPLE, DISP_COLOR_TEAL, DISP_COLOR_PURPLE},                    // Carlita In hex:  33 C1 7A 61 In dec:  51 193 122 97 // 71
+ {DISP_COLOR_WHITE, DISP_COLOR_BLACK, DISP_COLOR_WHITE},                     // Pandy In hex:  A3 A7 7B 61 In dec:  163 167 123 97 // 72
+ {DISP_COLOR_PURPLE, DISP_COLOR_TEAL, DISP_COLOR_PINK},                      // Mercat 1 In hex:  A3 D0 79 61 In dec:  163 208 121 97 // 73
+ {DISP_COLOR_PURPLE, DISP_COLOR_TEAL, DISP_COLOR_PINK},                      // Mercat 2 In hex:  83 B3 69 61 In dec:  131 179 105 97 // 74
+ {DISP_COLOR_YELLOW, DISP_COLOR_TEAL, DISP_COLOR_PINK},                      // Box Cat In hex:  13 61 79 61 In dec:  19 97 121 97 // 75
+ {DISP_COLOR_PURPLE, DISP_COLOR_RED, DISP_COLOR_PURPLE},                     // DJ Catnip In hex:  D3 C2 6A 61 In dec:  211 194 106 97 // 76
+ {DISP_COLOR_TEAL, DISP_COLOR_PURPLE, DISP_COLOR_TEAL},                      // Catrat In hex:  43 6E 78 61 In dec:  67 110 120 97 // 77
+ {DISP_COLOR_YELLOW, DISP_COLOR_GREEN, DISP_COLOR_RED},                      // Pillowcat In hex:  43 FF 5A 61 In dec:  67 255 90 97 // 78
+ {DISP_COLOR_TEAL, DISP_COLOR_PURPLE, DISP_COLOR_WHITE},                     // Cupcake In hex:  43 E0 78 61 In dec:  67 224 120 97 // 79
+ {DISP_COLOR_BLUE, DISP_COLOR_WHITE, DISP_COLOR_PINK},                       // Gabby In hex:  23 4C 7A 61 In dec:  35 76 122 97 // 80
+ {DISP_COLOR_GREEN, DISP_COLOR_PINK, DISP_COLOR_WHITE},                      // Kitty Fairy In hex:  83 35 7B 61 In dec:  131 53 123 97 // 81
  {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Big Puzzle 1 In hex:  33 88 6E 61 In dec:  51 136 110 97 // 82
  {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Big Puzzle 2 In hex:  E3 00 6F 61 In dec:  227 00 111 97 // 83
  {DISP_COLOR_YELLOW, DISP_COLOR_YELLOW, DISP_COLOR_YELLOW},                  // Big Puzzle 3 In hex:  03 7C 6F 61 In dec:  03 124 111 97 // 84
@@ -609,27 +619,180 @@ void display_leds_three(unsigned int color_num_1, unsigned int color_num_2, unsi
   for(i = 0; i < NUM_LEDS; i++)
       leds[i] = CRGB::Black;
   FastLED.show();
-  delay(100);
+  delay(35);
   
-  for(i = 0; i < (NUM_LEDS / 2); i++)
+  for(i = FIRST_HOUSE_LED; i <= LAST_MUSIC_ROOM_LED; i++)
   {
-    if (i < (NUM_LEDS / 3))
-    {
-      /* color from each end, one every .1 s */
-      leds[i] = numToColor[color_num_1];
-      leds[NUM_LEDS - 1 - i] = numToColor[color_num_3];
-    }
-    else
-    {
-      /* color from each end, one every .1 s */
-      leds[i] = numToColor[color_num_2];
-      leds[NUM_LEDS - 1 - i] = numToColor[color_num_2];
-    }
+    leds[i] = numToColor[color_num_1];
     FastLED.show();
-    delay(100);
+    delay(35);
+  }
+
+  for(i = FIRST_BATHROOM_LED; i <= LAST_BEDROOM_LED; i++)
+  {
+    leds[i] = numToColor[color_num_2];
+    FastLED.show();
+    delay(35);
+  }
+
+  for(i = LAST_PLAYROOM_LED; i >= FIRST_TOP_FLOOR_LED; i--)
+  {
+    leds[i] = numToColor[color_num_3];
+    FastLED.show();
+    delay(35);
   }
   
 }
+
+void clear_leds()
+{
+  unsigned int i = 0;
+
+  for(i = 0; i < NUM_LEDS; i++)
+      leds[i] = CRGB::Black;
+}
+
+void display_leds_handle()
+{
+   unsigned int i = 0;
+  
+  for(i = 0; i < 19; i++)
+  {
+    leds[i] = numToColor[DISP_COLOR_TEAL];
+    FastLED.show();
+  }
+  
+}
+
+void display_leds_house()
+{
+   unsigned int i = 0;
+
+  for(i = 0; i < NUM_LEDS; i++)
+      leds[i] = CRGB::Black;
+  
+  for(i = FIRST_HOUSE_LED; i < NUM_LEDS; i++)
+  {
+    leds[i] = numToColor[DISP_COLOR_BLUE];
+  }
+  FastLED.show();
+}
+
+void display_leds_house_tri()
+{
+   unsigned int i = 0;
+
+  for(i = 0; i < NUM_LEDS; i++)
+      leds[i] = CRGB::Black;
+  
+  for(i = FIRST_HOUSE_LED; i < NUM_LEDS; i+=3)
+  {
+    leds[i] = numToColor[DISP_COLOR_TEAL];
+    leds[i+1] = numToColor[DISP_COLOR_PINK];
+    leds[i+2] = numToColor[DISP_COLOR_PURPLE];
+    FastLED.show();
+    delay(40);
+  }
+  
+}
+
+void display_leds_house_five()
+{
+   unsigned int i = 0;
+
+  for(i = 0; i < NUM_LEDS; i++)
+      leds[i] = CRGB::Black;
+  
+  for(i = FIRST_HOUSE_LED; i < NUM_LEDS; i+=5)
+  {
+    leds[i] = numToColor[DISP_COLOR_TEAL];
+    leds[i+1] = numToColor[DISP_COLOR_PINK];
+    leds[i+2] = numToColor[DISP_COLOR_YELLOW];
+    leds[i+3] = numToColor[DISP_COLOR_PURPLE];
+    leds[i+4] = numToColor[DISP_COLOR_GREEN];
+    FastLED.show();
+    delay(40);
+  }
+  
+}
+
+void display_leds_music_room()
+{
+   unsigned int i = 0;
+
+  for(i = 0; i < NUM_LEDS; i++)
+      leds[i] = CRGB::Black;
+  
+  for(i = FIRST_MUSIC_ROOM_LED; i <= LAST_MUSIC_ROOM_LED; i++)
+  {
+    leds[i] = numToColor[DISP_COLOR_YELLOW];
+    FastLED.show();
+  }
+  
+}
+
+void display_leds_playroom()
+{
+   unsigned int i = 0;
+
+  for(i = 0; i < NUM_LEDS; i++)
+      leds[i] = CRGB::Black;
+  
+  for(i = FIRST_PLAYROOM_LED; i <= LAST_PLAYROOM_LED; i++)
+  {
+    leds[i] = numToColor[DISP_COLOR_YELLOW];
+    FastLED.show();
+  }
+  
+}
+
+void display_leds_bathroom()
+{
+   unsigned int i = 0;
+
+  for(i = 0; i < NUM_LEDS; i++)
+      leds[i] = CRGB::Black;
+  
+  for(i = FIRST_BATHROOM_LED; i <= LAST_BATHROOM_LED; i++)
+  {
+    leds[i] = numToColor[DISP_COLOR_YELLOW];
+    FastLED.show();
+  }
+  
+}
+
+void display_leds_bedroom()
+{
+   unsigned int i = 0;
+
+  for(i = 0; i < NUM_LEDS; i++)
+      leds[i] = CRGB::Black;
+  
+  for(i = FIRST_BEDROOM_LED; i <= LAST_BEDROOM_LED; i++)
+  {
+    leds[i] = numToColor[DISP_COLOR_YELLOW];
+    FastLED.show();
+  }
+  
+}
+
+
+uint8_t gHue = 0;
+void display_rainbow()
+{
+
+  fill_rainbow( leds, NUM_LEDS, gHue, 7);  
+     
+  FastLED.show();
+  delay(20);
+  gHue+=5; // slowly cycle the "base color" through the rainbow
+}
+
+
+
+
+
+
 
 void setup()
 {
@@ -660,11 +823,13 @@ void setup()
     Serial.println(F("Unable to begin:"));
     Serial.println(F("1.Please recheck the connection!"));
     Serial.println(F("2.Please insert the SD card!"));
-//    while(true);
+    while(true);
   }
   Serial.println(F("DFPlayer Mini online."));
 
   myDFPlayer.volume(VOLUME_MUSIC);  //Set volume value. From 0 to 30
+
+  clear_leds();
 }
 
 
@@ -695,6 +860,9 @@ unsigned int current_phase = 99;
 
 void perform_phase_1()
 {
+  clear_leds();
+  delay(50);
+  
   // Play Gabby 1
   sprintf(dataString,"DOUG%02d",1); // Create string for movie 
   Serial.println(dataString);       // send the data
@@ -702,6 +870,10 @@ void perform_phase_1()
   
   // Light up house
   delay(2000);
+  myDFPlayer.playMp3Folder(90); // Meow
+  delay(100);
+  display_leds_house_tri();
+  delay(3000);
 
   // Play Gabby 2
   sprintf(dataString,"DOUG%02d",2); // Create string for movie 
@@ -710,6 +882,9 @@ void perform_phase_1()
 
   // Light up mail box
   delay(2000);
+  display_leds_handle();
+  myDFPlayer.playMp3Folder(91); // Handle
+  delay(3000);
 
   // Play Gabby 3
   sprintf(dataString,"DOUG%02d",3); // Create string for movie 
@@ -717,7 +892,10 @@ void perform_phase_1()
   delay(94000);                     // wait until movie ends
 
   // Light up playroom
-  delay(2000);
+  delay(6000);
+  display_leds_playroom();
+  myDFPlayer.playMp3Folder(92); // Carlita
+  delay(4000);
 
   // Play Gabby 4
   sprintf(dataString,"DOUG%02d",4); // Create string for movie 
@@ -726,15 +904,17 @@ void perform_phase_1()
 
   // Light up house
   delay(2000);
+  display_leds_house_five();
+  myDFPlayer.playMp3Folder(93); // Shrink
+  delay(100);
+  delay(4000);
+  display_leds_playroom();
 
   // Play Gabby 5
   sprintf(dataString,"DOUG%02d",5); // Create string for movie 
   Serial.println(dataString);       // send the data
   delay(13000);                     // wait until movie ends
 
-  
-  //myDFPlayer.playMp3Folder(10);
-  //delay(15000);
 }
 
 void perform_phase_2()
@@ -753,7 +933,11 @@ void perform_phase_3()
   delay(52000);                     // wait until movie ends
 
   // Light up bathroom
-  delay(2000);
+  delay(6000);
+  display_leds_bathroom();
+  myDFPlayer.playMp3Folder(94); // Move Room
+  delay(100);
+  delay(4000);
 
   // Play Gabby 8
   sprintf(dataString,"DOUG%02d",8); // Create string for movie 
@@ -769,7 +953,10 @@ void perform_phase_4()
   delay(51000);                     // wait until movie ends
 
   // Light up bedroom
-  delay(2000);
+  delay(6000);
+  display_leds_bedroom();
+  myDFPlayer.playMp3Folder(94); // Move Room
+  delay(4000);
 
   // Play Gabby 10
   sprintf(dataString,"DOUG%02d",10); // Create string for movie 
@@ -785,7 +972,10 @@ void perform_phase_5()
   delay(51000);                     // wait until movie ends
 
   // Light up music room
-  delay(2000);
+  delay(6000);
+  display_leds_music_room();
+  myDFPlayer.playMp3Folder(94); // Move Room
+  delay(4000);
 
   // Play Gabby 12
   sprintf(dataString,"DOUG%02d",12); // Create string for movie 
@@ -795,13 +985,41 @@ void perform_phase_5()
 
 void perform_phase_6()
 {
-  // Play Gabby 13
-  sprintf(dataString,"DOUG%02d",13); // Create string for movie 
-  Serial.println(dataString);       // send the data
-  delay(38000);                     // wait until movie ends
+  // Play Rainbow Boogie
+  myDFPlayer.playMp3Folder(96); // Rainbow Boogie
+  display_rainbow();
+  delay(30000);
+  display_leds_house();
+  delay(7500);
+  display_rainbow();
+  delay(14900);
+  display_leds_house();
+  delay(7500);
+  display_rainbow();
+  delay(14900);
+  display_leds_house();
+  delay(7500);
+  display_rainbow();
+  delay(14900);
+  display_leds_house();
+  delay(7500);
+  display_rainbow();
+  delay(14900);
+  display_leds_house();
+  delay(8000);
 }
 
 void perform_phase_7()
+{
+  // Play Gabby 13
+  sprintf(dataString,"DOUG%02d",13); // Create string for movie 
+  Serial.println(dataString);       // send the data
+  clear_leds();
+  delay(50);
+  delay(38000);                     // wait until movie ends
+}
+
+void perform_phase_8()
 {
   // Play Gabby 14
   sprintf(dataString,"DOUG%02d",14); // Create string for movie 
@@ -809,10 +1027,13 @@ void perform_phase_7()
   delay(57000);                     // wait until movie ends
 }
 
-void perform_phase_8()
+void perform_phase_9()
 {
-  // Light up music room
-  delay(2000);
+  // Light up house rainbow
+  delay(3000);
+  display_leds_house_five();
+  myDFPlayer.playMp3Folder(95); // End House
+  delay(3000);
 
   // Play Gabby 15
   sprintf(dataString,"DOUG%02d",15); // Create string for movie 
@@ -855,21 +1076,34 @@ void perform_action(int matched_char)
     current_phase = 6;
     perform_phase_6();
   }
-  else if ((current_phase == 6) && ((matched_char == 22) || (matched_char == 23) || (matched_char == 10)))
+  else if ((current_phase == 6) && (matched_char > 0))
   {
     current_phase = 7;
     perform_phase_7();
   }
   else if ((current_phase == 7) && (matched_char > 0))
   {
-    current_phase = 98;
+    current_phase = 8;
     perform_phase_8();
+  }
+  else if ((current_phase == 8) && (matched_char > 0))
+  {
+    current_phase = 98;
+    perform_phase_9();
   }
 }
 
+int counter = 0;
 
 void loop()
 {
+
+  counter = counter + 1;
+  if (counter > 30)
+  {
+    Serial.println("HELLO THERE");
+    counter = 0;
+  }
 
   if (current_phase == 98)
      current_phase = 99;
@@ -938,13 +1172,13 @@ void loop()
         perform_action(matched_character);
         delay(100);
 
-        if (current_phase == 99)
+        if ((current_phase == 99) && (matched_character < 82))
         {
            myDFPlayer.playMp3Folder(matched_character);
         
            track_num_current = matched_character;
 
-           display_leds_three(pgm_read_word_near(&character_colors[matched_character][0]), pgm_read_word_near(&character_colors[matched_character][1]), pgm_read_word_near(&character_colors[matched_character][2]));
+           display_leds_three(pgm_read_word_near(&character_colors[matched_character - 1][0]), pgm_read_word_near(&character_colors[matched_character - 1][1]), pgm_read_word_near(&character_colors[matched_character - 1][2]));
         }
       }
       
